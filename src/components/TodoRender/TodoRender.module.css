@@ -1,0 +1,26 @@
+.todosRenderWrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 350px;
+}
+
+.todoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  border-bottom: 1px solid #8080802b;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+}
+
+.todoFinished {
+  text-decoration: line-through;
+  color: #8080808f;
+}

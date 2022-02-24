@@ -1,0 +1,28 @@
+import React from 'react';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+import ListIcon from '@material-ui/icons/List';
+import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
+import CheckIcon from '@material-ui/icons/Check';
+
+import style from './TodoActions.module.css';
+
+const TodoActions = ({handleChangeTab, tab}) => {
+  return (
+    <div className={style.actionsWrapper}>
+      <Tabs
+        value={tab}
+        onChange={(e, tabValue) => handleChangeTab(tabValue)}
+        indicatorColor="primary"
+        textColor="primary"
+        centered
+      >
+        <Tab label={<ListIcon />} />
+        <Tab label={<RadioButtonUncheckedIcon />} />
+        <Tab label={<CheckIcon />} />
+      </Tabs>
+    </div>
+  );
+}
+
+export default TodoActions;

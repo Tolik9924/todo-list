@@ -1,0 +1,62 @@
+.todoHeader {
+  height: 100px;
+  background-color: #9ba5e8;
+  position: relative;
+  border-radius: 5px 5px 0 0;
+}
+
+.addTodo svg {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: 999;
+  right: 35px;
+  bottom: -25px;
+}
+
+.iconBackground {
+  background-color: #fff;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 40px;
+  bottom: -20px;
+  border-radius: 50%;
+}
+
+.todosCount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 88px;
+  padding: 15px 30px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.finished {
+  font-size: 46px;
+  color: #fff;
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.weekDay {
+  color: #fff;
+  font-size: 28px;
+}
+
+.date {
+  color: #fff;
+  font-size: 28px;
+  margin-left: 10;
+}
